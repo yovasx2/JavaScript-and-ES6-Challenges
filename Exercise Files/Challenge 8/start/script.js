@@ -9,6 +9,9 @@ Create new function and use it as default parameter.
 "use strict";
 
 function square(a) {
+  if(a === undefined) {
+    throw 'Function square requires an argument!'
+  }
   console.log(a * a);
 }
 
