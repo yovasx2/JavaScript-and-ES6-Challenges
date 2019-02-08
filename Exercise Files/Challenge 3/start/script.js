@@ -5,7 +5,7 @@ Change code to match output.
 
 "use strict";
 
-var i = 10;
+let i = 10;
 
 for (var i = 0; i < 5; i++) {
   // some stuff
