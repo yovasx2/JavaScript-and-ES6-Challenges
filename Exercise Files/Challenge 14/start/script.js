@@ -28,6 +28,18 @@ var person2 = {
 };
 
 // Write function here
+// var shortPerson = ({name, info, postsQuantity = 0}) => {
+//   return { n: name, c: info.country, a: info.age, p: postsQuantity }
+// }
+var shortPerson = (obj) => {
+  var {
+    name: n,
+    info: { country: c, age: a },
+    postsQuantity: p = 0
+  } = obj
+  // return { n: n, c: c, a: a, p: p }
+  return { n, c, a, p }
+}
 
 console.log(shortPerson(person1));
 // {n: "Mike", c: "Spain", a: 23, p: 100}
