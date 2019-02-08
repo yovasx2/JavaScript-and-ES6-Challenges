@@ -10,6 +10,7 @@ var a = "first";
 var b = "second";
 
 // Write code here
+[b, a] = [a, b];
 
 console.log(a, b);
 // second first
