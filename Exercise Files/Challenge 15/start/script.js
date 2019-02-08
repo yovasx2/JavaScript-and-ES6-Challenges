@@ -12,6 +12,14 @@ var vowels = ["a", "e", "i", "o", "u"];
 var str = "Today is best day of my life";
 
 // Write code here
+// vowels.forEach((vowel) => {
+//   vowelsCount += (str.match(new RegExp(vowel, 'g')) || []).length
+// })
+
+for(let s of str){
+  if(vowels.includes(s)) vowelsCount++;
+}
+
 
 console.log(vowelsCount);
 // 8
